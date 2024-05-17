@@ -1,0 +1,132 @@
+[
+    {
+        "name": "TECHNICAL POLO SHIRT",
+        "description": "Relaxed-fit shirt made of technical fabric. Featuring a collar with front opening and short sleeves.",
+        "price": 999900,
+        "weight": 130,
+        "imgUrl": "https://static.zara.net/assets/public/d38e/2a81/196f4d058c21/270dc236b4e0/07563860800-530-p/07563860800-530-p.jpg?ts=1715004744759&w=563",
+        "CategoryId": 1,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "SEERSUCKER PRINTED SHIRT",
+        "description": "Relaxed fit shirt. Spread collar and short sleeves. Split hem. Button-up front.",
+        "price": 799900,
+        "weight": 120,
+        "imgUrl": "https://static.zara.net/assets/public/e644/3ea1/361040099c35/b1603c7de11f/07380572020-530-p/07380572020-530-p.jpg?ts=1715004762195&w=563",
+        "CategoryId": 1,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "TEXTURED KNIT T-SHIRT",
+        "description": "Knit T-shirt made of spun textured chenille fabric. Round neck and short sleeves. Ribbed trims.",
+        "price": 799900,
+        "weight": 135,
+        "imgUrl": "https://static.zara.net/assets/public/e644/3ea1/361040099c35/b1603c7de11f/07380572020-530-p/07380572020-530-p.jpg?ts=1715004762195&w=563",
+        "CategoryId": 3,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "COTTON - LINEN TROUSERS",
+        "description": "Trousers made of a cotton and 28% linen blend. Elasticated waistband with adjustable drawstring. Front pockets and back welt pockets.",
+        "price": 799900,
+        "weight": 165,
+        "imgUrl": "https://static.zara.net/assets/public/0b05/1fd5/51c34b24a3be/6f49b7886a8a/08574435800-e1/08574435800-e1.jpg?ts=1705322422135&w=563",
+        "CategoryId": 2,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "QUARTER-ZIP SWEATSHIRT",
+        "description": "Long sleeve quarter-zip sweatshirt. Ribbed trims.",
+        "price": 699900,
+        "weight": 280,
+        "imgUrl": "https://static.zara.net/assets/public/ab3c/0d8c/5ee746fea91a/159369bcf023/06462410800-e1/06462410800-e1.jpg?ts=1699950969253&w=563",
+        "CategoryId": 4,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "PLEATED BERMUDA SHORTS WITH BELT",
+        "description": "Regular fit Bermuda shorts. Waist with belt and front pleated details. Front pockets and back welt pockets. Front zip fly and button fastening.",
+        "price": 799900,
+        "weight": 350,
+        "imgUrl": "https://static.zara.net/assets/public/e23c/1d41/90d247638b62/03e6ce482de2/06861201800-e2/06861201800-e2.jpg?ts=1712071189690&w=563",
+        "CategoryId": 5,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "LINEN - COTTON SHIRT",
+        "description": "Relaxed fit shirt made of linen and cotton. Spread collar and short sleeves. Welt pocket at chest. Front button closure.",
+        "price": 899000,
+        "weight": 120,
+        "imgUrl": "https://static.zara.net/assets/public/dcf3/a3fa/72e849818bfa/c76cf13aa695/01063417610-a5/01063417610-a5.jpg?ts=1713343685968&w=563",
+        "CategoryId": 5,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "VISCOSE BLEND STRIPED SHIRT",
+        "description": "Relaxed fit shirt made of viscose blend fabric. Spread collar and short sleeves. Front button closure.",
+        "price": 799000,
+        "weight": 120,
+        "imgUrl": "https://static.zara.net/assets/public/a2ac/62f1/3c5d4a05aea1/147283ae3b69/05679450250-a1/05679450250-a1.jpg?ts=1705480945480&w=563",
+        "CategoryId": 1,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "FRAYED JACQUARD SHIRT",
+        "description": "Relaxed fit shirt. Spread collar and short sleeves. Front button closure.",
+        "price": 799000,
+        "weight": 120,
+        "imgUrl": "https://static.zara.net/assets/public/54c4/4ee9/646a41c79811/f5e5a40a7d98/09860400078-p/09860400078-p.jpg?ts=1715771304853&w=563",
+        "CategoryId": 1,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "name": "BEADED JACQUARD SHIRT",
+        "description": "Relaxed fit cotton shirt. Spread collar and short sleeves. Contrast front beaded detail. Front button closure.",
+        "price": 599000,
+        "weight": 120,
+        "imgUrl": "https://static.zara.net/assets/public/fdd4/4da2/34944679b159/8e475cda63e1/00881413614-p/00881413614-p.jpg?ts=1715872251828&w=563",
+        "CategoryId": 1,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    }
+]

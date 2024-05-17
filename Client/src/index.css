@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  width: 100%;
+  height: 100%;
+  
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  overflow: scroll;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.login__container {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  z-index: 2; 
+}
+
+.card__container{
+  width: 80vw;
+  margin: 90px auto 0; 
+  gap: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.v__card img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.v__card {
+  position: relative; 
+  z-index: 1; 
+  height: 600px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.checkout-container {
+  width: 100%;
+  max-width: 600px; 
+  display: flex;
+  justify-content: center; 
+}
+
+.checkout-button {
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: white; 
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1; 
+  width: 100%;
+}
+
+.checkout-button:hover {
+  background-color: black; 
+  color: white;
+  transition: 0.3s;
+}
+
+.card__container {
+  margin-top: 50px; 
+}
+
+
+.h__card img{
+  max-height: 300px;
+}
+
+.h__card .card-body{
+  max-width: 400px;
+}
+
+.h__card button, .btn__user{
+  border: 1px solid black;
+}
+
+.h__card button:hover, .btn__user:hover{
+  border: 1px solid black;
+  background-color: black; 
+  color: white;
+  transition: 0.3s;
+}
+
+.v__card button{
+  border: 1px solid black;
+  height: 5px;
+}
+
+.v__card button:hover{
+  border: 1px solid black;
+  background-color: black; 
+  color: white;
+  transition: 0.3s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+.d__card img{
+  max-height: 500px;
+}
+
+.d__card .card-body{
+  max-width: 500px;
+}
+
+.d__card button{
+  border: 1px solid black;
+}
+
+.d__card button:hover{
+  border: 1px solid black;
+  background-color: black; 
+  color: white;
+  transition: 0.3s;
+}
+
+.drawer-side {
+  /* position: relative; */
+  z-index: 1000;
+}
+
+.drawer-overlay {
+  z-index: 1001; 
+}
