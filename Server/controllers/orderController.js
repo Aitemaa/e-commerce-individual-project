@@ -26,7 +26,7 @@ class OrderController{
                 size
             })
 
-            res.status(200).json({message: "successfully added product to your cart"})
+            res.status(201).json({message: "successfully added product to your cart"})
         } catch (error) {
             next(error)
         }
@@ -68,34 +68,22 @@ class OrderController{
         }
     }
 
-    static async getOrderDetailsById (req, res, next){
-        try {
-            const id = req.params.orderDetailsId;
-            const orderDetail = await OrderDetail.findOne({
-                where: {id},
-                include: {
-                    model: Order
-                }
-            });
-            if (!orderDetail) {
-                throw ({name: "OrderNotFound"})
-            }
-            res.status(200).json({orderDetail})
-        } catch (error) {
-            next(error)
-        }
-    }
-
     static async updateCart(req, res, next){
         try {
             const id = req.params.orderDetailsId;
             const {size} = req.body
             const orderDetail = await OrderDetail.findOne({
-                where: {id},
-                include: {
-                    model: Order
-                }
+                where: { id },
+                include: [
+                    {
+                        model: Order,
+                    },
+                    {
+                        model: Product,
+                    }
+                ]
             });
+            console.log(orderDetail)
             if (!orderDetail) {
                 throw ({name: "OrderNotFound"})
             }
@@ -114,13 +102,17 @@ class OrderController{
         try {
             const id = req.params.orderDetailsId;
             const orderDetail = await OrderDetail.findOne({
-                where: {id},
-                include: {
-                    model: Order
-                }
+                where: { id },
+                include: [
+                    {
+                        model: Order,
+                    },
+                    {
+                        model: Product,
+                    }
+                ]
             });
-
-            console.log(id, orderDetail)
+            console.log(orderDetail)
             if (!orderDetail) {
                 throw ({name: "OrderNotFound"})
             }
