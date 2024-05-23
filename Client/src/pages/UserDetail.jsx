@@ -115,7 +115,7 @@ export function UserDetail() {
                 </label>
                 <select name="CityId" onChange={handleChange} id="CityId">
                   <option value={newUser.CityId}>
-                    {user.user.City.cityName ? user.user.City.cityName : ""}
+                    
                   </option>
                   {Array.isArray(cities.cities) &&
                     cities.cities.map((city) => (

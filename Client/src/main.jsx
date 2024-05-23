@@ -9,6 +9,7 @@ import Register from "./pages/Register.jsx";
 import Cart from "./pages/Cart.jsx";
 import AddProductToCart from "./pages/AddProductToCart.jsx";
 import { UserDetail } from "./pages/UserDetail.jsx";
+import MyOrders from "./pages/Orders.jsx";
 
 const router = createBrowserRouter([
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/myOrders',
+        element: <MyOrders />
       },
       {
         path: '/myCart',

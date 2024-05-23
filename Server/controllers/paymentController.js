@@ -18,16 +18,16 @@ class PaymentController {
                     }
                 ]
             });
-
+            console.log(order, "ini order")
             const totalAmount = await calculateAmount(order, user.CityId)
-
+            console.log(totalAmount, '<<< total amount')
             let snap = new midtransClient.Snap({
                 isProduction : false,
                 serverKey :process.env.MIDTRANS_SERVER_KEY
             });
             let parameter = {
                 "transaction_details": {
-                    "order_id": order.id,
+                    "order_id": Math.floor(Math.random() * (1000 * order.id)),
                     "gross_amount": totalAmount
                 },
                 "credit_card":{
@@ -44,7 +44,7 @@ class PaymentController {
         
         const transaction = await snap.createTransaction(parameter)
         let transactionToken = transaction.token;
-        console.log('transactionToken:',transactionToken);
+        console.log('>> transaction order',transactionToken);
             res.json({transactionToken})
         } catch (error) {
             next(error)

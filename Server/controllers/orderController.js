@@ -32,6 +32,21 @@ class OrderController{
         }
     }
 
+    static async updateStatusAfterPayment(req, res, next){
+        try {
+            const id = req.params.orderId;
+            const order = await Order.findByPk(id);
+            if (!order) {
+                throw ({name: "OrderNotFound"})
+            }
+
+            await order.update({status: 'Completed'})
+            res.status(200).json({message: "successfully update order's status"})
+        } catch (error) {
+            next(error);
+        }
+    }
+
     static async getAllOrdersForUser(req, res, next){
         try {
             const UserId = req.user.id;

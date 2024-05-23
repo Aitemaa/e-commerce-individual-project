@@ -23,6 +23,6 @@
   }
 
   .sidebar {
-    position: relative; /* or 'fixed' if the sidebar is meant to be fixed */
-    z-index: 2; /* Higher z-index because it should overlay the card */
+    position: relative; 
+    z-index: 2; 
   }
