@@ -1,3 +1,5 @@
 node_modules
 .env
 RMT48-KEY.pem
+IP-P2.pem
+coverage

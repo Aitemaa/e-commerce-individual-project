@@ -36,6 +36,7 @@ export const fetchOrders = () => {
 }
 
 export const deleteProductFromCart = (id) => {
+    console.log(id)
     return async (dispatch) => {
         try {
             const {data} = await axiosInstance({
@@ -54,6 +55,7 @@ export const deleteProductFromCart = (id) => {
 }
 
 export const updateProductFromCart = (id, size) => {
+    console.log(id)
     return async (dispatch) => {
         try {
             const {data} = await axiosInstance({
