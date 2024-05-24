@@ -112,7 +112,6 @@ class OrderController{
                     }
                 ]
             });
-            console.log(orderDetail)
             if (!orderDetail) {
                 throw ({name: "OrderNotFound"})
             }

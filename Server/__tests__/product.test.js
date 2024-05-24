@@ -111,6 +111,62 @@ describe('GET /products:id', () => {
     })
 })
 
+describe('POST /products', () => {
+    describe('success add product', () => {
+        test('return an object with status 200', async () => {
+            const {body, status} = await request(app)
+            .post(`/products`)
+            .set("Authorization", `Bearer ${admin_token}`)
+            .send({
+                name: "test",
+                description: "testing add product",
+                price: 999000,
+                weight: 120,
+                imgUrl: "https://static.zara.net/assets/public/fdd4/4da2/34944679b159/8e475cda63e1/00881413614-p/00881413614-p.jpg?ts=1715872251828&w=563",
+                CategoryId: 1
+            })
+            expect(status).toBe(201)
+            expect(body).toBeInstanceOf(Object)
+            expect(body).toHaveProperty("message", expect.any(String))
+        })
+    })
+})
+
+describe('PUT /products', () => {
+    describe('success edit product', () => {
+        test('return an object with status 200', async () => {
+            const {body, status} = await request(app)
+            .put(`/products/${11}`)
+            .set("Authorization", `Bearer ${admin_token}`)
+            .send({
+                name: "testing edit product",
+                description: "testing add product",
+                price: 699000,
+                weight: 120,
+                imgUrl: "https://static.zara.net/assets/public/fdd4/4da2/34944679b159/8e475cda63e1/00881413614-p/00881413614-p.jpg?ts=1715872251828&w=563",
+                CategoryId: 1
+            })
+            expect(status).toBe(200)
+            expect(body).toBeInstanceOf(Object)
+            expect(body).toHaveProperty("message", expect.any(String))
+        })
+    })
+})
+
+describe('DELETE /products', () => {
+    describe('success delete product', () => {
+        test('return an object with status 200', async () => {
+            const {body, status} = await request(app)
+            .delete(`/products/${11}`)
+            .set("Authorization", `Bearer ${admin_token}`)
+            expect(status).toBe(200)
+            expect(body).toBeInstanceOf(Object)
+            expect(body).toHaveProperty("message", expect.any(String))
+        })
+    })
+})
+
+
 
 
 afterAll(async () => {
